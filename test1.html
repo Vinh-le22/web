@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="#" onclick="add(); return false;">more</a>
+  <ul id="1">
+    <li>frist item</li>
+  </ul>
+  <script>
+    temp=1
+    function add(){
+      var x=document.createElement("li")
+      x.className="list"
+      x.innerHTML="line "+temp
+      document.getElementById("1").appendChild(x);
+      temp++
+    }
+  </script>
+</body>
+
+</html>
